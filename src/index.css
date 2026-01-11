@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: hsl(138 97% 30%);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --muted: oklch(0.97 0 0);
+  --accent: oklch(0.97 0 0);
+  --cream: hsl(54, 88%, 84%);
+  --font-body: 'Lora', serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
+.dark {
+  --primary: hsl(138 97% 45%);
+  --background: oklch(0.18 0.012 260);
+  --foreground: oklch(0.95 0.01 260);
+  --muted: oklch(0.28 0.015 260);
+  --accent: oklch(0.35 0.02 260);
+  --cream: oklch(0.45 0.08 85);
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-cream: var(--cream);
+
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    @apply hidden;
+  }
+  body {
+    @apply bg-background font-sans text-foreground/80;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-foreground font-heading;
+  }
+}
+
+@layer components {
+  .swiper-linear-behavior .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  .custom-pagination {
+    position: relative !important;
+    bottom: 0 !important;
+  }
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #d1d5db;
+    opacity: 1;
+    transition: all 0.3s ease;
+    border-radius: 99px;
+  }
+
+  .custom-pagination .swiper-pagination-bullet-active {
+    width: 30px;
+    background: var(--primary) !important;
+  }
+}
