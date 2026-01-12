@@ -6,7 +6,7 @@ import 'swiper/css';
 
 export default function Sponsors() {
   return (
-    <div className='mx-auto max-w-360 px-4 md:px-6 bg-background/30 rounded-md py-4 md:py-8 space-y-8 overflow-hidden'>
+    <div className='mx-auto max-w-360 px-4 md:px-6 bg-background/70 rounded-md py-4 md:py-8 space-y-8 overflow-hidden'>
       <p className='text-center text-sm font-semibold uppercase tracking-widest text-foreground/60'>
         Trusted by industry leaders
       </p>
