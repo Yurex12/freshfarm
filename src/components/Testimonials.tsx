@@ -49,7 +49,7 @@ export default function Testimonials() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className='flex flex-col rounded-md border border-foreground/40 bg-background p-6'>
+            <div className='flex flex-col rounded-md border border-foreground/40 p-6'>
               <div className='flex items-center gap-4 pb-4 border-b border-foreground/40'>
                 <img
                   src={testimonial.image}

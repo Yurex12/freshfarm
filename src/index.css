@@ -6,7 +6,7 @@
   --primary: hsl(138 97% 30%);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-  --muted: oklch(0.97 0 0);
+  --muted: oklch(98.663% 0.0021 14.256);
   --accent: oklch(0.97 0 0);
   --cream: hsl(54, 88%, 84%);
   --font-body: 'Lora', serif;
@@ -39,7 +39,7 @@
     @apply hidden;
   }
   body {
-    @apply bg-background font-sans text-foreground/80;
+    @apply bg-muted font-sans text-foreground/80;
   }
   h1,
   h2,
