@@ -49,7 +49,7 @@ export default function Partners() {
         <img
           src='/farmer.png'
           alt='Farmer'
-          className='w-72 sm:w-80 lg:w-full max-w-md rounded-2xl object-cover'
+          className='w-72 sm:w-80 lg:w-full aspect-[2/2.6] max-w-md rounded-2xl object-cover bg-accent'
         />
       </div>
     </section>

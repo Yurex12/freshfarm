@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    allowedHosts: ['cautious-shrew.outray.app'],
+    allowedHosts: ['calm-bedroom.outray.app'],
   },
 });

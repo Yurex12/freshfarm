@@ -6,7 +6,7 @@ export default function ProductCard(product: Product) {
       <img
         src={product.image}
         alt={product.name}
-        className='mb-4 h-40 w-full rounded-md object-cover'
+        className='mb-4 h-40 w-full rounded object-cover bg-accent'
       />
 
       <h2 className='mb-2 text-base font-semibold uppercase text-foreground'>

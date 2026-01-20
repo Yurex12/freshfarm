@@ -24,7 +24,12 @@ export default function Hero() {
           </div>
 
           <div className='flex justify-center md:justify-end'>
-            <img src='/hero.jpg' alt='Farmer' className='rounded' />
+            <img
+              src='/hero.jpg'
+              alt='Farmer'
+              /* aspect-square, aspect-video, or a custom ratio */
+              className='rounded h-auto w-full aspect-[4/2.6] object-cover bg-muted/50'
+            />
           </div>
         </div>
       </div>
