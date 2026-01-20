@@ -53,8 +53,8 @@ export default function Testimonials() {
               <div className='flex items-center gap-4 pb-4 border-b border-foreground/40'>
                 <img
                   src={testimonial.image}
-                  alt={testimonial.name}
-                  className='h-12 w-12 rounded-full object-cover'
+                  alt={testimonial.name.split('')[0]}
+                  className='h-12 w-12 rounded-full object-cover bg-accent'
                 />
 
                 <div>
