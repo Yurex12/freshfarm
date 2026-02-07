@@ -54,7 +54,11 @@ export default function AboutPage() {
 
       {/* image */}
       <div className='lg:basis-1/2'>
-        <img src='/about.jpg' alt='About image' className='rounded-md' />
+        <img
+          src='/about.jpg'
+          alt='About image'
+          className='rounded h-auto w-full aspect-[4/2.8] object-cover bg-muted/50'
+        />
       </div>
     </div>
   );
