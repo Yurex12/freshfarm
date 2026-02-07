@@ -57,7 +57,7 @@ export default function AboutPage() {
         <img
           src='/about.jpg'
           alt='About image'
-          className='rounded h-auto w-full aspect-[4/2.8] object-cover bg-muted/50'
+          className='rounded h-auto w-full aspect-[4/2.8] object-cover bg-accent'
         />
       </div>
     </div>
